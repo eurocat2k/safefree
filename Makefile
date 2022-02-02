@@ -201,13 +201,13 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = aclocal-1.16
+ACLOCAL = ${SHELL} '/home/system/src/C/sftest/missing' aclocal-1.16
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
-AUTOCONF = autoconf
-AUTOHEADER = autoheader
-AUTOMAKE = automake-1.16
+AUTOCONF = ${SHELL} '/home/system/src/C/sftest/missing' autoconf
+AUTOHEADER = ${SHELL} '/home/system/src/C/sftest/missing' autoheader
+AUTOMAKE = ${SHELL} '/home/system/src/C/sftest/missing' automake-1.16
 AWK = nawk
 CC = cc
 CCDEPMODE = depmode=gcc3
@@ -244,7 +244,7 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-MAKEINFO = makeinfo
+MAKEINFO = ${SHELL} '/home/system/src/C/sftest/missing' makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = ./install-sh -c -d
 NM = /usr/local/bin/nm -B

@@ -329,7 +329,7 @@ configure:10744: checking for shl_load
 configure:10744: cc -o conftest -g -O2   conftest.c  >&5
 ld: error: undefined symbol: shl_load
 >>> referenced by conftest.c:55
->>>               /tmp/conftest-6adbc6.o:(main)
+>>>               /tmp/conftest-c3fd56.o:(main)
 cc: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:10744: $? = 1
 configure: failed program was:
@@ -458,7 +458,6 @@ configure:11319: checking for a BSD-compatible install
 configure:11387: result: /usr/bin/install -c
 configure:11400: checking whether build environment is sane
 configure:11455: result: yes
-configure:11485: WARNING: 'missing' script is too old or missing
 configure:11598: checking for a thread-safe mkdir -p
 configure:11637: result: ./install-sh -c -d
 configure:11640: checking whether make sets $(MAKE)
@@ -617,7 +616,7 @@ lt_cv_truncate_bin='/bin/dd bs=4096 count=1'
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='aclocal-1.16'
+ACLOCAL='${SHELL} '\''/home/system/src/C/sftest/missing'\'' aclocal-1.16'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
@@ -627,9 +626,9 @@ AM_DEFAULT_V='$(AM_DEFAULT_VERBOSITY)'
 AM_DEFAULT_VERBOSITY='1'
 AM_V='$(V)'
 AR='ar'
-AUTOCONF='autoconf'
-AUTOHEADER='autoheader'
-AUTOMAKE='automake-1.16'
+AUTOCONF='${SHELL} '\''/home/system/src/C/sftest/missing'\'' autoconf'
+AUTOHEADER='${SHELL} '\''/home/system/src/C/sftest/missing'\'' autoheader'
+AUTOMAKE='${SHELL} '\''/home/system/src/C/sftest/missing'\'' automake-1.16'
 AWK='nawk'
 CC='cc'
 CCDEPMODE='depmode=gcc3'
@@ -665,7 +664,7 @@ LIPO=''
 LN_S='ln -s'
 LTLIBOBJS=''
 LT_SYS_LIBRARY_PATH=''
-MAKEINFO='makeinfo'
+MAKEINFO='${SHELL} '\''/home/system/src/C/sftest/missing'\'' makeinfo'
 MANIFEST_TOOL=':'
 MKDIR_P='./install-sh -c -d'
 NM='/usr/local/bin/nm -B'
